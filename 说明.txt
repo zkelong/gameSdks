@@ -1,0 +1,6 @@
+U8SDK2: u8sdk抽象层工程，具体sdk实现需要引用该工程
+U8SDK_20160419115244.zip: u8工具包
+U8SDK_iOS_20151116102407.zip:ios打包工具
+U8SDKTools-ipa.zip：ipa打包工具
+U8SDK_Projectsy:一些渠道实现项目
+U8SDKTool-Win-P34：打包目录实例
