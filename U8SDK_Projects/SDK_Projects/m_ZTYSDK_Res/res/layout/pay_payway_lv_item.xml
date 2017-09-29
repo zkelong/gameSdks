@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/xdw_white" >
+
+    <RelativeLayout
+        android:id="@+id/pay_price"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_162_dip" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/dimen_100_dip"
+            android:layout_height="@dimen/dimen_100_dip"
+            android:layout_marginTop="@dimen/dimen_24_dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/dajinbi" />
+
+        <TextView
+            android:id="@+id/pay_amount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_14_dip"
+            android:textSize="@dimen/dimen_19_dip"
+            android:gravity="center"
+            android:text="金额：5.00元"
+            android:textColor="#d55c51" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pay_price"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:layout_centerHorizontal="true" >
+        
+        <ImageView
+	        android:id="@+id/pay_payway_item_icon_iv"
+	        android:layout_width="@dimen/dimen_39_dip"
+	        android:layout_height="@dimen/dimen_39_dip"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/dimen_16_dip"
+	        android:layout_marginBottom="@dimen/dimen_13_dip"
+	        android:src="@drawable/pay_alipay_icon" />
+	    <TextView
+	        android:id="@+id/pay_payway_item_name_tv"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="@dimen/dimen_13_dip"
+	        android:layout_marginBottom="@dimen/dimen_27_dip"
+	        android:layout_toRightOf="@id/pay_payway_item_icon_iv"
+	        android:textColor="#666666"
+	        android:text="支付宝"
+	        android:textSize="@dimen/dimen_19_dip" />
+
+	    <TextView
+	        android:id="@+id/pay_payway_item_other_tv"
+	        android:layout_width="@dimen/dimen_143_dip"
+	        android:layout_height="@dimen/dimen_33_dip"
+	        android:layout_marginLeft="@dimen/dimen_141_dip"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_toRightOf="@id/pay_payway_item_name_tv"
+	        android:layout_marginRight="@dimen/dimen_17_dip"
+	        android:textColor="@color/mz_text_thj" />
+	    
+    </RelativeLayout>
+
+</RelativeLayout>

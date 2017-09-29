@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="loading_init">正在初始化...</string>
+     <string name="success_init">初始化成功</string>
+    
+     <string name="networkNotPresent">网络不给力</string>
+     <string name="userpwd_empty">用户名或密码不能为空.</string>
+    <string name="invalidPassword">密码长度不能少于6位或大于20位.</string> 
+    <string name="invalidusername">账户名长度不能少于6位或大于20位.</string> 
+    <string name="usernamecontains">账户名只能包含字母数组和下划线.</string> 
+    <!-- Login -->
+    <string name="Login_login">7K7K账号登陆</string>
+    <string name="Login_logout">退出登录中...</string>
+    <string name="txt_logout">注销账户</string>
+    <string name="Login_hint">用户名注册</string>
+    <string name="Login_password_hint">Password</string>
+    <string name="Login_forgot_Password">forgot Password ?</string>
+    <string name="Login_invalidEmail">Email is invalid</string>
+     <string name="loading_loging">7K7K账号%1$s,正在为您登陆,请稍候...</string>
+     <string name="blankValuePresent">返回为空</string>
+     
+     <string name="submit_extinfo">提交游戏扩展数据</string>
+    
+     <!-- Registration -->
+    <string name="Registration_Register">手机号一键注册</string>
+    <string name="mobileunavail">手机号注册暂时无法使用，请您使用用户名注册~</string>
+    <string name="Registration_fast">快速注册</string>
+    <string name="Registration_choice">您也可以使用用户名注册</string>
+    <string name="Registration_fastdesc">使用手机号注册可以找到更多好友</string>
+    <string name="Registration_regverify">已向您的手机发送短信验证码，请查收</string>
+    <string name="Registration_regvertitle">验证手机号</string>
+    <string name="Registration_regnotice">正在为您发送注册成功短信</string>
+    <string name="Registration_verifycode">正在为您发送验证码短信</string>
+    <string name="Registration_useremail">Useremail</string>
+    <string name="Registration_phoneno">Mobile no</string>
+    <string name="Registration_userPassword">Password</string>
+    <string name="Registration_userConfPassword">Confirm Password</string>
+    
+    <string name="Registration_Registration">7K7K账号注册</string>
+    <string name="Registration_Mobile">验证手机号\u0026设置密码</string>
+    <string name="Registration_invalidEmail">邮箱格式有误.</string>
+    <string name="Registration_invalidPassword">Password and confirm password doesnt match</string>
+    <string name="Registration_Dialog">温馨提示</string>
+    <string name="Registration_go">立即注册</string>
+    <string name="Registration_mobilego">验证身份</string>
+    <string name="Registration_retry">重新获取</string>
+    <string name="Registration_cancel">取消注册</string>
+    <string name="loading_createAccount">正在为您注册,请稍候 ...</string>
+    <string name="Registration_confirm">注册前请先同意7K7K用户服务协议</string>
+    <string name="Registration_success">注册成功</string>
+    <string name="errorInResponse">服务器返回错误</string>
+    
+    <string name="anqu_showpwd">显示密码</string>
+    <string name="recover_pwd">找回密码</string>
+    <string name="recover_desc">已绑定手机号，通过手机验证找回</string>
+    <string name="recover_otherway">未绑定手机号，通过其他方式找回</string>
+    <string name="recover_otherindex">其他方式</string>
+    <string name="recover_web">访问%1$s找回密码</string>
+    <string name="recover_email">客服邮箱:kefu@7k7k.com<a href='mailto:kefu@7k7k.com'></a></string>
+    <string name="recover_buttontxt">知道了</string>
+    <string name="recover_mobile">验证手机号\u0026重置密码</string>
+    <string name="recover_reset">重置密码并进入游戏</string>
+    <string name="user_verify">验证用户...</string>
+    <string name="user_nohere">该账号未注册,请您确认.</string>
+    <string name="recover_inprocess">验证用户...</string>
+    <string name="mismatched">输入的账号和密码不正确</string>
+    <string name="txt_account">账号:</string>
+    <string name="desc_account">输入KK账号</string>
+    <string name="txt_password">密码:</string>
+    <string name="desc_password">输入密码</string>
+    <string name="savestatus">下次自动登录</string>
+    <string name="txt_login">立即登录</string>
+    <string name="txt_recsms">用于接收验证短信</string>
+    <string name="txt_phone">手机号:</string>
+    <string name="txt_inputcode">输入验证码</string>
+    <string name="txt_newpwd">新密码:</string>
+    <string name="txt_pwddesc">6-20个字符，区分大小写</string>
+    <string name="txt_validcode">验证码:</string>
+    <string name="txt_recdesc1">您可以通过手机或电脑</string>
+    <string name="txt_contact">您可以通过以下方式联系我们</string>
+    <string name="txt_composite">数字字母下划线组合</string>
+    <string name="txt_agree">同意用户服务协议</string>
+    <string name="txt_email">邮箱:</string>
+    <string name="txt_validEmail">有效邮箱名</string>
+    <string name="txt_alipay">确认无误后去支付宝付款</string>
+    <string name="txt_weixinpay">确认无误后去微信付款</string>
+    <string name="txt_yibaopay">确认无误后去易宝付款</string>
+    <string name="txt_caifutong">确认无误后去财付通付款</string>
+    <string name="txt_unionpay">确认无误后通过银联支付</string>
+    <string name="txt_confirmpay">确定付款</string>
+    <string name="txt_orderamount">订单金额</string>
+    <string name="txt_payunit">元</string>
+    <string name="txt_back">返回</string>
+    
+    <string name="loading_PaymentInProcess">服务器支付请求提交...</string>
+    <string name="loading_Payonroad">正在请求7K7K安全支付...</string>
+    <string name="Pay_sucExit">支付完成，请点击确定退出7K7K支付中心</string>
+    <string name="Pay_cancelExit">支付未成功，请返回游戏重新下单。</string>
+    
+    <!-- exit -->
+     <string name="Exit_OK">退出游戏</string>
+     <string name="Exit_Cancel">继续游戏</string>
+     <string name="Exit_Sdk">退出SDK</string>
+     
+    <string name="sdk_app_name">7K7K游戏中心</string>
+    <string name="anqu_aliquickpay">支付宝</string>
+    <string name="anqu_yibao">易宝</string>
+    <string name="anqu_weixin_pay">微信</string>
+	<string name="anqu_shenzhoufu">神州付</string>
+	<string name="anqu_caifutong">财付通</string>
+	<string name="anqu_bypay">银联支付</string>
+	<string name="anqu_mhpay">易付通</string>
+	<string name="anqu_junwangka">骏网卡</string>
+	
+	<string name="txt_cardno">卡    号:</string>
+	<string name="txt_inputno">请输入充值卡号</string>
+	<string name="txt_cardpwd">密    码:</string>
+	<string name="txt_inputpwd">请输入充值密码</string>
+	<string name="txt_card50">面    值:50元</string>
+	<string name="txt_user">用    户:</string>
+	<string name="value_user">用户</string>
+	<string name="txt_productname">商   品:</string>
+	<string name="txt_chinamobile">移动</string>
+	<string name="txt_chinaunion">联通</string>
+	<string name="txt_chinatel">电信</string>
+	<string name="txt_carddesc">所选面值与卡实际面值不符时,以卡实际面值为准</string>
+	<string name="txt_choosecard">请选择充值卡面额</string>
+	
+    <string name="anqu_switchaccount">切换账号</string> 
+    <string name="anqu_exitaccount">退出账号</string>
+    <string name="anqu_backgame">返回游戏</string>   
+    <string name="anqu_abandonpay">支付尚未完成,您确定放弃此次支付吗?</string>
+    <string name="anqu_confirmexit">确定退出</string>   
+   
+    <string name="txt_anqupay">7K7K支付</string>
+	<string name="anqu_check_update">查询升级</string>
+	<string name="anqu_install">安装</string>
+	<string name="anqu_launch_preferences">启动设置</string>
+	<string name="anqu_preference_attributes">属性设置</string>
+	<string name="anqu_global_preference">全局设置</string>
+	<string-array name="anqu_launch_list_entries">
+		<item>外部商户订单</item>
+		<item>远程订单</item>
+	</string-array>
+	<string name="order_mode">订单模式</string>
+	<string name="popup_result">显示返回值</string>
+	
+	<string name="result_status_title">Result Status : </string>
+	<string name="memo_title">Memo : </string>
+	<string name="check_result_title">Check Sign Result : </string>
+	<string name="trade_number_title">Trade Number</string>
+	<string name="payPhaseId_title">Pay PhaseId</string>
+	<string name="order_pay">订单支付</string>
+	<string name="start_order">打开订单页面</string>
+	
+	<string name="anqu_ensure">确定</string>
+    <string name="anqu_cancel">取消</string>
+    <string name="anqu_refresh">刷新</string>
+    <string name="anqu_processing">加载中...</string>    
+	<!-- 神州付 -->
+	<string name="connect_time_out">链接超时 time out.</string>
+	<string name="cardamount">您选择的充值卡面额是:</string>
+	
+	<!-- 银联-->
+	  <string name="anqu_uppay">银联手机支付</string>
+	  
+	<!-- 百付通银联
+	 <string name="upomp_bypay_sessionhint">由于您过长时间未操作，此次交易已失效，请退出支付，并重新进行交易。是否立即退出支付？</string>
+    <string name="upomp_bypay_splash_hint1">随时随地</string>
+    <string name="upomp_bypay_splash_hint2">随心支付</string>    
+     <string name="upomp_bypay_pay_it_valuecardpay">储值卡支付</string>
+    <string name="upomp_bypay_pay_it_preventfish">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020为防止钓鱼应用，请核对您收到的95516发送的短信中，安全提示信息是否为：</string>
+    <string name="upomp_bypay_pay_it_bankmobilenum">发卡行预留的手机号</string>
+    ...
+  -->
+	
+	<string name="txt_dopay">进行支付</string>
+	<string name="txt_entermarket">欢迎进入游戏商城</string>
+	<string name="txt_demo">关于demo</string>
+</resources>

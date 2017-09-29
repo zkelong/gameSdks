@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/dimen_23_dip"
+    android:layout_marginRight="@dimen/dimen_23_dip"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="@dimen/dimen_177_dip"
+        android:layout_height="@dimen/dimen_56_dip"
+        android:layout_marginBottom="@dimen/dimen_13_dip"
+        android:layout_marginTop="@dimen/dimen_14_dip"
+        android:src="@drawable/muzhitongxingzheng_logo" />
+
+</LinearLayout>

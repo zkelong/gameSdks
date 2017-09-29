@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    
+    <params>
+        <param name="BD_APPID" required="1" showName="appId" desc="" bWriteInManifest="0" bWriteInClient="1" /> 
+        <param name="BD_APPKEY" required="1" showName="appKey" desc="" bWriteInManifest="0" bWriteInClient="1" />
+        <param name="BD_Fixed_PAY" required="1" showName="是否定额支付" desc="" bWriteInManifest="0" bWriteInClient="1" /> 
+        <param name="BD_RADIO" required="1" showName="支付比例" desc="" bWriteInManifest="0" bWriteInClient="1" />
+        <param name="BDPlatformType" required="1" showName="GameId" desc="" bWriteInManifest="1" bWriteInClient="0" />
+        <param name="BDGameVersion" value = "3.7.4" required="0" showName="" desc="bd" bWriteInManifest="1" bWriteInClient="0" />
+    </params>
+    
+    <operations>
+        <operation step="1" type="mergeManifest" from="SDKManifest.xml" to="AndroidManifest.xml" />
+        <operation step="2" type="copyRes" from="assets" to="assets" />
+        <operation step="3" type="copyRes" from="libs" to="lib" />
+        <operation step="4" type="copyRes" from="res" to="res" />
+        <operation step="5" type="copyRes" from="root" to="" />
+    </operations>
+    
+    <plugins>
+        <plugin name="com.u8.sdk.BaiduUser" type="1" desc="用户登录接口"/>
+        <plugin name="com.u8.sdk.BaiduPay" type="2" desc="用户支付接口"/>
+    </plugins>
+    
+    <version>
+        <name>百度</name>
+        <versionCode>1</versionCode>
+        <versionName>3.7.4</versionName>
+    </version>    
+    
+</config>

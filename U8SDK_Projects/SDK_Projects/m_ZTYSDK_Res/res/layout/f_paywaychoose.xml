@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_119_dip"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/pay_payway_scrollv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:scrollbars="@null"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <zty.sdk.views.MyListView
+                android:id="@+id/pay_payway_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_4_dip"
+                android:divider="@drawable/pay_gnam_devider_icon" />
+
+           <View
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/dimen_1_dip"
+		        android:layout_marginLeft="@dimen/dimen_17_dip"
+	        	android:layout_marginRight="@dimen/dimen_17_dip"
+		        android:background="#d6d6d6"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/pay_payway_paybt"
+        android:layout_width="@dimen/dimen_209_dip"
+        android:layout_height="@dimen/dimen_49_dip"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="@dimen/dimen_23_dip"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="@dimen/dimen_33_dip"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/pay_pay_btn"/>
+
+</LinearLayout>

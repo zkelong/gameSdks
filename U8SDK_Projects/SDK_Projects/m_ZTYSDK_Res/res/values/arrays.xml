@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages">
+        <item>问题1</item>
+        <item>问题2 </item>
+        <item>问题3</item>
+        <item>问题4</item>
+        <item>问题5</item>
+        <item>问题6</item>
+        <item>问题7</item>
+        <item>问题8</item>
+        <item>问题9</item>
+    </string-array>
+</resources>

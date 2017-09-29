@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_390_dip"
+    android:layout_height="@dimen/dimen_59_dip"
+    android:layout_marginLeft="@dimen/dimen_16_dip"
+    android:layout_marginRight="@dimen/dimen_16_dip"
+    android:layout_marginTop="@dimen/dimen_50_dip"
+    android:orientation="horizontal" >
+    
+    <LinearLayout 
+        android:layout_width="@dimen/dimen_45_dip"
+        android:layout_height="@dimen/dimen_59_dip"
+        android:gravity="center" >
+        <ImageView
+         android:id="@+id/content_iv"
+         android:layout_width="@dimen/dimen_29_dip"
+         android:layout_height="@dimen/dimen_29_dip"
+         android:src="@drawable/vip_0" />
+    </LinearLayout>
+    
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.91"
+        android:textColor="@color/mz_text_thj"
+        android:gravity="center_vertical|left"
+        android:textSize="@dimen/dimen_17_dip" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1px"
+        android:layout_height="@dimen/dimen_39_dip"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:background="#d3d3d3" />
+
+    <ImageView
+        android:id="@+id/delete_content"
+        android:layout_width="@dimen/dimen_25_dip"
+        android:layout_height="@dimen/dimen_25_dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="3dp"
+        android:padding="@dimen/dimen_6_dip"
+        android:background="@drawable/yuanxingcuohao" />
+
+</LinearLayout>

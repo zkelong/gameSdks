@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/yeepay_notice_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/yeepay_notice"
+        android:textColor="#d55c51"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <zty.sdk.views.MyGridView
+        android:id="@+id/yeepay_price_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:columnWidth="80dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:scrollbars="none"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/pay_gnam_devider_icon" />
+
+    <LinearLayout
+        android:id="@+id/yeepay_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/yeepay_itemicon_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/yeepay_china_mobile_icon" />
+
+        <TextView
+            android:id="@+id/yeepay_itemname_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:text="中国移动"
+            android:textColor="#686868"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/qstart_devider_icon" />
+
+        <ImageView
+            android:id="@+id/yeepay_more_payway_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@drawable/qstart_more_btn1" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/yeepay_cardno_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_bg"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:gravity="center_vertical|left"
+        android:hint="@string/moblie_hint_str02"
+        android:maxLength="21"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/yeepay_cardpsd_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_bg"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:gravity="center_vertical|left"
+        android:hint="@string/moblie_hint_str03"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/pay_title_devider_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/moblie_hint_str06"
+        android:textColor="#d55c51"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/yeepay_notice1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/moblie_hint_str07"
+        android:textColor="#d55c51"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/yeepay_notice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/moblie_hint_str08"
+        android:textColor="#d55c51"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/yeepay_notice3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/moblie_hint_str09"
+        android:textColor="#d55c51"
+        android:textSize="15sp" />
+    
+    <Button
+        android:id="@+id/yeepay_submit_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/findpsd_submit_btn" />
+
+</LinearLayout>

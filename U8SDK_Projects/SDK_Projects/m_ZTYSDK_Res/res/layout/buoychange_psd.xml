@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <include layout="@layout/buoy_menu"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="@dimen/dimen_366_dip"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_53_dip"
+            android:background="@drawable/dhl" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="修改密码"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:id="@+id/lin_back"
+                android:layout_width="@dimen/dimen_53_dip"
+                android:layout_height="@dimen/dimen_53_dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="vertical" >
+                
+                <ImageView
+	                android:id="@+id/img_back"
+	                android:layout_width="@dimen/dimen_20_dip"
+	                android:layout_height="@dimen/dimen_20_dip"
+	                android:src="@drawable/zuojiantou" />
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/mzback" >
+
+            <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent" >
+
+		        <LinearLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_centerHorizontal="true"
+		            android:layout_marginTop="@dimen/dimen_170_dip"
+		            android:orientation="vertical" >
+
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="@dimen/dimen_52_dip"
+		                android:background="@drawable/txt_while" >
+
+		                <LinearLayout
+		                    android:layout_width="@dimen/dimen_45_dip"
+		                    android:layout_height="match_parent"
+		                    android:gravity="center" >
+
+		                    <ImageView
+		                        android:layout_width="@dimen/dimen_17_dip"
+		                        android:layout_height="@dimen/dimen_23_dip"
+		                        android:background="@drawable/suozi_ccc" />
+		                </LinearLayout>
+
+		                <EditText
+		                    android:id="@+id/et_oldpsd"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="match_parent"
+		                    android:layout_marginRight="@dimen/dimen_6_dip"
+		                    android:layout_weight="1"
+		                    android:background="@null"
+		                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		                    android:hint="@string/changepsd_psd_et_str0"
+		                    android:inputType="textPassword"
+		                    android:singleLine="true"
+		                    android:textColor="#999999"
+		                    android:textSize="@dimen/dimen_20_dip" >
+
+		                    <requestFocus />
+		                </EditText>
+
+		                <LinearLayout
+		                    android:id="@+id/lin_oldshow"
+		                    android:layout_width="@dimen/dimen_45_dip"
+		                    android:layout_height="match_parent"
+		                    android:gravity="center" >
+
+		                    <ImageView
+		                        android:id="@+id/img_oldshow"
+		                        android:layout_width="@dimen/dimen_33_dip"
+		                        android:layout_height="@dimen/dimen_20_dip"
+		                        android:background="@drawable/chakanpwd" />
+		                </LinearLayout>
+		            </LinearLayout>
+
+		            <LinearLayout
+		                android:layout_width="match_parent"
+		                android:layout_height="@dimen/dimen_52_dip"
+		                android:layout_marginTop="@dimen/dimen_15_dip"
+		                android:background="@drawable/txt_while" >
+
+		                <LinearLayout
+		                    android:layout_width="@dimen/dimen_45_dip"
+		                    android:layout_height="match_parent"
+		                    android:gravity="center" >
+
+		                    <ImageView
+		                        android:layout_width="@dimen/dimen_17_dip"
+		                        android:layout_height="@dimen/dimen_23_dip"
+		                        android:background="@drawable/suozi_ccc" />
+		                </LinearLayout>
+
+		                <EditText
+		                    android:id="@+id/et_newpsd"
+		                    android:layout_width="match_parent"
+		                    android:layout_height="match_parent"
+		                    android:layout_marginRight="@dimen/dimen_6_dip"
+		                    android:layout_weight="1"
+		                    android:background="@null"
+		                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+		                    android:hint="@string/changepsd_psd_et_str2"
+		                    android:inputType="textPassword"
+		                    android:singleLine="true"
+		                    android:textColor="#999999"
+		                    android:textSize="@dimen/dimen_20_dip" />
+
+		                <LinearLayout
+		                    android:id="@+id/lin_newshow"
+		                    android:layout_width="@dimen/dimen_45_dip"
+		                    android:layout_height="match_parent"
+		                    android:gravity="center" >
+
+		                    <ImageView
+		                        android:id="@+id/img_newshow"
+		                        android:layout_width="@dimen/dimen_33_dip"
+		                        android:layout_height="@dimen/dimen_20_dip"
+		                        android:background="@drawable/chakanpwd" />
+		                </LinearLayout>
+		            </LinearLayout>
+
+		            <ImageView
+		                android:id="@+id/img_bt_sub"
+		                android:layout_width="@dimen/dimen_338_dip"
+		                android:layout_height="@dimen/dimen_56_dip"
+		                android:layout_marginTop="@dimen/dimen_20_dip"
+		                android:src="@drawable/bt_21" />
+		        </LinearLayout>
+		
+		    </RelativeLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/txt_exit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<zty.sdk.views.MyListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/more_content_lv"
+    android:layout_width="@dimen/dimen_390_dip"
+    android:layout_height="wrap_content"
+    android:divider="#d3d3d3"
+    android:dividerHeight="1px"
+    android:background="@drawable/sdk_main_bg" >
+</zty.sdk.views.MyListView>

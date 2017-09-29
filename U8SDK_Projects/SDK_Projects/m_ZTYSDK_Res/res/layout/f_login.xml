@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_427_dip"
+    android:layout_height="@dimen/dimen_413_dip"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/dimen_20_dip"
+    android:layout_marginRight="@dimen/dimen_20_dip"
+    android:background="@drawable/sdk_main_bg"
+    android:orientation="vertical" >
+
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_73_dip">
+
+        <include layout="@layout/mzyw_pp_title" />
+
+        <include layout="@layout/mzyw_pp_logo" />
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:background="#d6d6d6"/>
+
+    
+    <LinearLayout
+        android:layout_width="@dimen/dimen_395_dip"
+        android:layout_height="@dimen/dimen_59_dip"
+        android:layout_marginLeft="@dimen/dimen_16_dip"
+        android:layout_marginRight="@dimen/dimen_16_dip"
+        android:layout_marginTop="@dimen/dimen_33_dip"
+        android:background="@drawable/txt_while"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="@dimen/dimen_45_dip"
+            android:layout_height="@dimen/dimen_59_dip"
+            android:gravity="center" >
+	        <ImageView
+	            android:layout_width="@dimen/dimen_15_dip"
+	            android:layout_height="@dimen/dimen_26_dip"
+	            android:src="@drawable/rentouxiang_ccc" />
+		</LinearLayout>
+        <EditText
+            android:id="@+id/login_name_et"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="@string/login_name_hint_str"
+            android:inputType="text"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+			android:nextFocusForward="@+id/login_psd_et"
+            android:textSize="@dimen/dimen_17_dip" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/login_delete_iv"
+            android:layout_width="@dimen/dimen_25_dip"
+            android:layout_height="@dimen/dimen_25_dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/yuanxingcuohao"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_395_dip"
+        android:layout_height="@dimen/dimen_59_dip"
+        android:layout_marginLeft="@dimen/dimen_16_dip"
+        android:layout_marginRight="@dimen/dimen_16_dip"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:background="@drawable/txt_while"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:layout_width="@dimen/dimen_45_dip"
+            android:layout_height="@dimen/dimen_59_dip"
+            android:gravity="center" >
+        
+	        <ImageView
+	            android:layout_width="@dimen/dimen_17_dip"
+	            android:layout_height="@dimen/dimen_23_dip"
+	            android:background="@drawable/suozi_ccc" />
+
+        </LinearLayout>
+        
+        <EditText
+            android:id="@+id/login_psd_et"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="@string/login_pwd_promit_str"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:textSize="@dimen/dimen_17_dip" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/login_showpsd_iv"
+            android:layout_width="@dimen/dimen_33_dip"
+            android:layout_height="@dimen/dimen_20_dip"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/chakanpwd"
+            android:layout_marginRight="3dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_bt"
+        android:layout_width="@dimen/dimen_395_dip"
+        android:layout_height="@dimen/dimen_52_dip"
+        android:layout_marginLeft="@dimen/dimen_16_dip"
+        android:layout_marginRight="@dimen/dimen_16_dip"
+        android:layout_marginTop="@dimen/dimen_20_dip"
+        android:background="@drawable/btn_07" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16_dip"
+        android:layout_marginRight="@dimen/dimen_16_dip"
+        android:layout_marginTop="@dimen/dimen_20_dip" >
+
+        <TextView
+            android:id="@+id/login_fpsd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/dimen_15_dip"
+            android:text="找回密码 ？"
+            android:textColor="#e4573b" />
+
+        <TextView
+            android:id="@+id/login_regist_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/dimen_15_dip"
+            android:text="账号注册 >>"
+            android:textColor="#666666" />
+    </RelativeLayout>
+
+</LinearLayout>

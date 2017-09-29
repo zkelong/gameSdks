@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_loginerror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:gravity="left"
+        android:text="@string/mismatched"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ff0000"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/com_anqusdk_login_edittext_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_gravity="center"
+             android:text="@string/txt_account"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <com.diannaoban.sdk.operate.AutoCompleteTextCustom
+            android:id="@+id/txt_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="10dip"
+           	android:drawableRight="@drawable/com_anqusdk_delete_selector"
+            android:background="#ffffff"
+            android:hint="@string/desc_account"
+            android:imeOptions="actionNext"
+            android:textSize="16sp"
+            android:inputType="none"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#cccccc" >
+        </com.diannaoban.sdk.operate.AutoCompleteTextCustom>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/com_anqusdk_login_edittext_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dip"
+            android:text="@string/txt_password"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <com.diannaoban.sdk.operate.ClearEditText
+            android:id="@+id/txt_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="10dip"
+            android:drawableRight="@drawable/com_anqusdk_delete_selector"
+            android:background="#ffffff"
+            android:hint="@string/desc_password"
+            android:textSize="16sp"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:textColor="#000000"
+            android:textColorHint="#cccccc" >
+        </com.diannaoban.sdk.operate.ClearEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/savePasswordCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/savestatus"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000" >
+        </CheckBox>
+
+        <TextView
+            android:id="@+id/txt_toforget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dip"
+            android:layout_marginRight="0dip"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="@string/recover_pwd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ababab" />
+    </LinearLayout>
+    
+      <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+        
+    <Button
+			android:id="@+id/login"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="40dp"
+            android:background="@drawable/anqusdk_btn_style_one_normal"
+            android:text="@string/txt_login"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

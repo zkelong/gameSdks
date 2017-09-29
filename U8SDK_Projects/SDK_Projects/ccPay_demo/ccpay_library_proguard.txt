@@ -1,0 +1,40 @@
+-keepattributes Signature
+-keepattributes *Annotation*
+
+
+#DataEye
+-dontwarn com.dataeye.**
+-keep public class com.dataeye.** {*;} 
+-keep public interface com.dataeye.** {*;}
+-dontwarn com.unity3d.player.**
+-keep class com.unity3d.player.** 
+
+#support-v4
+
+-dontwarn android.support.v4.**
+-keep class android.support.v4.** { *; }
+
+#支付宝
+-dontwarn com.alipay.**
+-keep class com.alipay.** { *; }
+
+#Gson
+-keep class sun.misc.Unsafe { *; }
+-dontwarn com.google.gson.**
+-keep class com.google.gson.** { *; }
+
+#lion
+
+-dontwarn com.lion.**
+-keep class com.lion.** { *;}
+
+#银联
+-dontwarn com.unionpay.**
+-keep class com.unionpay.** { *;}
+
+
+
+
+
+
+

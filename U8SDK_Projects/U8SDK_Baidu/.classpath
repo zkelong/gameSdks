@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK/U8SDK2"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/U8SDK2"/>
+	<classpathentry kind="lib" path="libs/alipaysdk.jar"/>
+	<classpathentry kind="lib" path="libs/android_api.jar"/>
+	<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="libs/async-httpclient-1.6.0.jar"/>
+	<classpathentry kind="lib" path="libs/Baidu_Mobstat_Android_FOR_GAME_SDK_1.4.jar"/>
+	<classpathentry kind="lib" path="libs/BDGame_SDK_V3.7.4.jar"/>
+	<classpathentry kind="lib" path="libs/bdp_wxpaysdk.jar"/>
+	<classpathentry kind="lib" path="libs/dk_game_sdk_1_1.jar"/>
+	<classpathentry kind="lib" path="libs/galaxy-lite-2.0.0.jar"/>
+	<classpathentry kind="lib" path="libs/httpclient-1.0.0.jar"/>
+	<classpathentry kind="lib" path="libs/mqqopenpay.jar"/>
+	<classpathentry kind="lib" path="libs/need_lib.jar"/>
+	<classpathentry kind="lib" path="libs/okhttp-2.7.5.jar"/>
+	<classpathentry kind="lib" path="libs/okhttp-ws-2.7.5.jar"/>
+	<classpathentry kind="lib" path="libs/okio-1.8.0.jar"/>
+	<classpathentry kind="lib" path="libs/picasso-2.5.2.jar"/>
+	<classpathentry kind="lib" path="libs/pushservice-4.6.2.39.jar"/>
+	<classpathentry kind="lib" path="libs/sapi-core-6.14.7.jar"/>
+	<classpathentry kind="lib" path="libs/slidingMenu.jar"/>
+	<classpathentry kind="lib" path="libs/UPPayAssistEx.jar"/>
+	<classpathentry kind="lib" path="libs/UPPayPluginEx.jar"/>
+	<classpathentry kind="lib" path="libs/walletsdk_v3.4_20160106.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

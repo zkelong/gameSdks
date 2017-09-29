@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/anqusdk_dialog_bg"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <!-- android:padding="16.0dip" -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" >
+
+          <LinearLayout
+            android:id="@+id/descLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+           
+        <TextView
+            android:id="@+id/desctitle"
+            style="@style/text_20_ff7f16"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:layout_height="40dip"
+            android:layout_marginBottom="8dp"   
+            android:text="ceshi " />   
+            
+          <ImageButton
+		     android:id="@+id/dialog_pre_entry_close"
+		     android:layout_width="0dp"  
+		     android:layout_weight="1"
+		     android:layout_height="wrap_content"  
+	    	 android:background="@drawable/anqusdk_search_clear_pressed" />          
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/normalLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+          <Button
+                android:id="@+id/backbutton"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/com_anqusdk_returnbtn"
+                android:visibility="gone"
+              /> 
+                  
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_20_ff7f16"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="8dp"           
+            android:gravity="center"
+            android:text="ceshi "
+            android:visibility="visible" />   
+                   
+        </LinearLayout>
+         
+        <LinearLayout
+            android:id="@+id/content1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialogLinear"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/positiveButton"
+                style="@style/text_15_ffffff_sdw"
+                android:layout_width="120.0dip"
+                android:layout_height="40.0dip"
+                android:background="@drawable/anqusdk_btn_style_one_normal"
+                android:gravity="center"
+                android:text="@string/anqu_ensure"
+                android:textColor="#ffffff" />
+            
+            <Button
+                android:id="@+id/negativeButton"
+                style="@style/text_15_666666_sdw"
+                android:layout_width="120.0dip"
+                android:layout_height="40.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:background="@drawable/anqusdk_btn_zhuce_style_one_normal"
+                android:gravity="center"
+                android:text="@string/anqu_cancel"
+                android:textColor="#ffffff" />
+            
+        </LinearLayout>
+        
+          <TextView
+            android:id="@+id/description"          
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text=""
+            android:visibility="gone" />
+        
+    </LinearLayout>
+
+</FrameLayout>

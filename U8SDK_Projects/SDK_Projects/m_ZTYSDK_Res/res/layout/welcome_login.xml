@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcome_login_start"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_38_dip"
+    android:layout_marginTop="@dimen/dimen_15_dip"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/xiaodiaosi"
+        android:layout_width="@dimen/dimen_448_dip"
+        android:layout_height="@dimen/dimen_38_dip"
+        android:background="@drawable/text_002" >
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_38_dip"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/dimen_29_dip"
+                android:layout_height="@dimen/dimen_29_dip"
+                android:layout_gravity="center"
+                android:src="@drawable/vip_0" />
+
+	        <TextView
+	            android:id="@+id/txt_admin"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="admin"
+	            android:textColor="#2b79c7"
+	            android:textSize="@dimen/dimen_15_dip" />
+	
+	        <TextView
+	            android:id="@+id/textView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="，欢迎回来"
+	            android:textColor="#333333"
+	            android:textSize="@dimen/dimen_15_dip" />
+	        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

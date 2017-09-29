@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+        <TextView
+            android:id="@+id/txt_registererror"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:gravity="left"
+            android:text="@string/mismatched"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0000"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="@drawable/com_anqusdk_login_edittext_bg"
+        android:paddingLeft="5dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txt_account"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <com.diannaoban.sdk.operate.ClearEditText
+            android:id="@+id/txt_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="10dip"
+            android:ellipsize="end"
+            android:gravity="fill_vertical"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:hint="@string/txt_composite"
+            android:imeOptions="actionNext"
+            android:textCursorDrawable="@null"
+            android:textColorHint="#cccccc"
+            android:singleLine="true"
+            android:textSize="15sp" >
+        </com.diannaoban.sdk.operate.ClearEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="@drawable/com_anqusdk_login_edittext_bg"
+        android:paddingLeft="5dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="@string/txt_password"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+        
+        <com.diannaoban.sdk.operate.ClearEditText
+            android:id="@+id/txt_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="10dip"
+            android:gravity="fill_horizontal"
+            android:background="#ffffff"
+            android:hint="@string/txt_pwddesc"
+            android:textColorHint="#cccccc"
+            android:textCursorDrawable="@null"
+            android:imeOptions="actionDone"
+			android:textColor="#000000"
+            android:inputType="textPassword"
+            android:textSize="15sp" >
+        </com.diannaoban.sdk.operate.ClearEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/showpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/anqu_showpwd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:visibility="gone" />
+       
+        <CheckBox
+            android:id="@+id/xieyi_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dip"
+            android:text="@string/txt_agree"
+            android:checked="true"
+            android:textSize="14sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="@drawable/com_anqusdk_login_edittext_bg"
+        android:paddingLeft="5dp"
+       	android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/nicename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:text="@string/txt_email"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <com.diannaoban.sdk.operate.ClearEditText
+            android:id="@+id/txt_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dip"
+            android:textColor="#bbbbbb"
+            android:gravity="fill_horizontal"
+            android:background="#ffffff"
+            android:hint="@string/txt_validEmail"
+            android:inputType="textEmailAddress"
+            android:textSize="13sp" >
+        </com.diannaoban.sdk.operate.ClearEditText>
+    </LinearLayout>
+    
+   <!--
+  <TextView
+        android:id="@+id/emaildesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:gravity="left"
+        android:text="注：邮箱用于找回密码，请您填写有效邮箱."
+        android:textColor="#2200C1"
+        android:textSize="13sp" />
+ -->
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">   
+
+        <TextView
+            android:id="@+id/txt_mobiledesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:text="test"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ababab" />   
+      
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:background="#ffffff"
+        android:paddingLeft="5dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_mobiletxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txt_phone"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
+
+        <com.diannaoban.sdk.operate.ClearEditText
+            android:id="@+id/txt_mobileno"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/com_anqusdk_login_edittext_bg"
+            android:ellipsize="end"
+            android:hint="@string/txt_recsms"
+            android:singleLine="true"
+            android:inputType="phone"
+            android:imeOptions="actionDone"
+            android:textCursorDrawable="@null"
+            android:textColor="#cccccc"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+</LinearLayout>

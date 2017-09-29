@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_83_dip"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_land"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img_userimage"
+        android:layout_width="@dimen/dimen_60_dip"
+        android:layout_height="@dimen/dimen_75_dip"
+        android:layout_marginTop="@dimen/dimen_19_dip"
+        android:layout_gravity="center"
+        android:src="@drawable/maotou" />
+
+    <ImageView
+        android:id="@+id/img_vip"
+        android:layout_width="@dimen/dimen_48_dip"
+        android:layout_height="@dimen/dimen_14_dip"
+        android:layout_marginTop="@dimen/dimen_7_dip"
+        android:layout_gravity="center"
+        android:src="@drawable/b_fvip0" />
+
+    <LinearLayout
+        android:id="@+id/lin_lb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+        <ImageView
+            android:id="@+id/img_lb"
+            android:layout_width="@dimen/dimen_29_dip"
+            android:layout_height="@dimen/dimen_29_dip"
+            android:layout_gravity="center"
+            android:src="@drawable/lb" />
+
+        <TextView
+            android:id="@+id/txt_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_18_dip"
+            android:textColor="#F0F0F0"
+            android:text="礼包" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_xx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_29_dip"
+            android:orientation="horizontal"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_29_dip"
+                android:layout_height="@dimen/dimen_29_dip"
+                android:layout_weight="1" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_31_dip"
+                android:layout_height="@dimen/dimen_30_dip"
+                android:layout_weight="1" >
+                
+                <ImageView
+		            android:id="@+id/img_xx"
+		            android:layout_width="@dimen/dimen_29_dip"
+		            android:layout_height="@dimen/dimen_29_dip"
+		            android:src="@drawable/xx" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimen_27_dip"
+                android:layout_height="@dimen/dimen_29_dip"
+                android:layout_marginLeft="@dimen/dimen_1_dip"
+                android:layout_weight="1" >
+                
+                <TextView
+	                android:id="@+id/txt_news_num"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/round_textview"
+	                android:gravity="center"
+	                android:visibility="gone"
+	                android:textColor="@color/black"
+	                android:textSize="@dimen/dimen_10_dip" />
+                
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_xx"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_18_dip"
+            android:textColor="#F0F0F0"
+            android:text="客服中心" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_smrz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30_dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+        <ImageView
+            android:id="@+id/img_smrz"
+            android:layout_width="@dimen/dimen_29_dip"
+            android:layout_height="@dimen/dimen_29_dip"
+            android:layout_gravity="center"
+            android:src="@drawable/smrz" />
+
+        <TextView
+            android:id="@+id/txt_smrz"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimen_10_dip"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_18_dip"
+            android:textColor="#F0F0F0"
+            android:text="实名认证" />
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_38_dip"
+    android:layout_marginTop="@dimen/dimen_15_dip"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/xiaodiaosi"
+        android:layout_width="@dimen/dimen_448_dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_002" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_17_dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/image_you_or_vip"
+                android:layout_width="@dimen/dimen_29_dip"
+                android:layout_height="@dimen/dimen_29_dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_6_dip"
+                android:src="@drawable/vip_0" />
+
+            <TextView
+                android:id="@+id/txt_admin_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="admin"
+                android:textColor="#2b79c7"
+                android:textSize="@dimen/dimen_15_dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_27_dip"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/huhuan_small"
+                android:textColor="#999999" />
+
+            <TextView
+                android:id="@+id/txt_Tologin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_8_dip"
+                android:gravity="center"
+                android:text="切换账号"
+                android:textColor="#999999"
+                android:textSize="@dimen/dimen_15_dip" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="loading.."
+            android:textColor="#2b79c7"
+            android:textSize="@dimen/dimen_15_dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

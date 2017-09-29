@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+        <include layout="@layout/buoy_menu_port"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="@dimen/dimen_356_dip"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#7b86b8" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            
+            <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="@dimen/dimen_43_dip"
+	            android:background="@drawable/dhl" >
+	
+	            <TextView
+	                android:id="@+id/textView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerHorizontal="true"
+	                android:layout_centerVertical="true"
+	                android:text="消息中心"
+	                android:textColor="@color/white"
+	                android:textSize="@dimen/dimen_23_dip" />
+	
+	            <LinearLayout
+	                android:id="@+id/lin_back"
+	                android:layout_width="@dimen/dimen_53_dip"
+	                android:layout_height="@dimen/dimen_53_dip"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:gravity="center"
+	                android:orientation="vertical" >
+	                
+	                <ImageView
+		                android:id="@+id/img_back"
+		                android:layout_width="@dimen/dimen_20_dip"
+		                android:layout_height="@dimen/dimen_20_dip"
+		                android:src="@drawable/zuojiantou" />
+	                
+	            </LinearLayout>
+	            
+	        </RelativeLayout>
+            
+            <ProgressBar  
+		        android:id="@+id/pb"  
+		        style="?android:attr/progressBarStyleHorizontal"  
+		        android:layout_width="fill_parent"  
+		        android:layout_height="1dp"  
+		        android:indeterminateOnly="false"  
+		        android:max="100"  
+		        android:progressDrawable="@drawable/progress_bar_states" >  
+	    	</ProgressBar>
+            
+		    <WebView
+		        android:id="@+id/web_news"
+		        android:layout_width="match_parent"
+		        android:background="#7b86b8"
+		        android:layout_height="match_parent" />
+		</LinearLayout>
+		
+	</LinearLayout>
+	
+    <TextView
+        android:id="@+id/txt_exit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

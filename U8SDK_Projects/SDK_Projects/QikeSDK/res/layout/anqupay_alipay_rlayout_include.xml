@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_toRightOf="@+id/radiogroup"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:visibility="visible"  >
+
+    <ScrollView
+        android:id="@+id/alipay_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/alipay_submitpaybtn"
+        android:scrollbars="@null" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <!-- 支付金额 -->
+            <TextView
+                android:id="@+id/alipay_textview_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"
+                android:text="@string/txt_alipay"
+                android:textColor="#5d5d5d"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/alipay_submitpaybtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/com_anqupay_pay_btn_selector"
+        android:text="@string/txt_confirmpay"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_318_dip"
+    android:background="#ffffff"
+    android:layout_marginBottom="@dimen/dimen_27_dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_13_dip" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_marginLeft="@dimen/dimen_16_dip"
+                android:layout_width="@dimen/dimen_35_dip"
+                android:layout_height="@dimen/dimen_35_dip"
+                android:src="@drawable/touxiang" />
+
+            <TextView
+                android:id="@+id/txt_zh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_marginLeft="@dimen/dimen_13_dip"
+                android:text="m1653158651"
+                android:textColor="#e4583a"
+                android:textSize="@dimen/dimen_17_dip" />
+
+            <TextView
+                android:id="@+id/txt_yue"
+                android:layout_width="@dimen/dimen_141_dip"
+                android:layout_height="@dimen/dimen_33_dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginRight="@dimen/dimen_17_dip"
+                android:background="@drawable/red_03"
+                android:textSize="@dimen/dimen_16_dip"
+                android:text="余额：88.88M币" />
+
+        </RelativeLayout>
+        
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/dimen_1_dip"
+	        android:layout_marginLeft="@dimen/dimen_17_dip"
+	        android:layout_marginRight="@dimen/dimen_17_dip"
+	        android:layout_marginTop="@dimen/dimen_14_dip"
+	        android:background="#d6d6d6"/>
+
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dip"
+            android:layout_marginLeft="@dimen/dimen_16_dip"
+            android:layout_marginRight="@dimen/dimen_16_dip">
+        
+	        <TextView
+	            android:id="@+id/textView3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#333333"
+	            android:textSize="@dimen/dimen_17_dip"
+	            android:text="M币充值" />
+
+	        <TextView
+	            android:id="@+id/textView4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:textSize="@dimen/dimen_16_dip"
+	            android:textColor="#e4583a"
+	            android:text="注：1元=1M币" />
+        
+        </RelativeLayout>
+
+        <zty.sdk.views.MyGridView
+            android:id="@+id/mzchoose_price_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8_dip"
+            android:layout_marginRight="@dimen/dimen_8_dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_4_dip"
+            android:columnWidth="@dimen/dimen_88_dip"
+            android:gravity="center"
+            android:horizontalSpacing="@dimen/dimen_13_dip"
+            android:verticalSpacing="@dimen/dimen_11_dip"
+            android:numColumns="auto_fit"
+            android:scrollbars="none" />
+ 
+        <LinearLayout 
+            android:layout_width="@dimen/dimen_160_dip"
+            android:layout_height="@dimen/dimen_33_dip"
+            android:layout_marginTop="@dimen/dimen_11_dip"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/dimen_26_dip"
+                android:layout_height="@dimen/dimen_26_dip"
+                android:src="@drawable/xingxing" />
+            
+            <TextView
+                android:id="@+id/txt_MB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/dimen_16_dip"
+                android:textColor="#e4583a"
+                android:text="获得：20M币" />
+            
+		</LinearLayout>
+        <Button
+            android:id="@+id/mzchoose_submit_bt"
+            android:layout_width="@dimen/dimen_209_dip"
+            android:layout_height="@dimen/dimen_49_dip"
+            android:layout_marginTop="@dimen/dimen_13_dip"
+            android:layout_gravity="center"
+            android:background="@drawable/pay_pay_btn" />
+
+    </LinearLayout>
+
+</LinearLayout>

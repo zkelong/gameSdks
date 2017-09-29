@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_66_dip"
+        android:background="#e4583a" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"
+            android:text="在线提问" />
+
+        <LinearLayout 
+            android:id="@+id/lin_back"
+            android:layout_width="@dimen/dimen_73_dip"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+        
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/dimen_19_dip"
+            android:layout_height="@dimen/dimen_19_dip"
+            android:src="@drawable/zuojiantou" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FCFCFC" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dip"
+            android:layout_marginLeft="@dimen/dimen_47_dip"
+            android:layout_marginRight="@dimen/dimen_47_dip"
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            android:background="@drawable/sdk_main_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <zty.sdk.utils.XCDropDownListView
+                    android:id="@+id/drop_down_list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </zty.sdk.utils.XCDropDownListView>
+                
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_140_dip"
+            android:layout_alignLeft="@+id/linearLayout1"
+            android:layout_alignRight="@+id/linearLayout1"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/biankuang"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/txt_tjnr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_120_dip"
+                android:background="@null"
+                android:layout_marginLeft="@dimen/dimen_25_dip"
+                android:layout_marginRight="@dimen/dimen_25_dip"
+                android:hint="@string/tjnr"
+                android:autoText="true"
+                android:imeOptions="actionNext"
+                android:capitalize="words"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:gravity="top"
+                android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+                android:isScrollContainer="false"
+                android:minHeight="24dip"
+                android:maxLength="200"
+                android:minLines="5"
+                android:padding="4dip"
+                android:textSize="14dp" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/txt_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/txt_tjnr"
+                android:text="0/200"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_sub"
+            android:layout_width="@dimen/dimen_132_dip"
+            android:layout_height="@dimen/dimen_49_dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/tj" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_120_dip"
+            android:layout_alignLeft="@+id/linearLayout2"
+            android:layout_alignRight="@+id/linearLayout2"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical" >
+            
+            <GridView 
+		        android:id="@+id/noScrollgridview"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_marginLeft="1dp"
+		        android:horizontalSpacing="1dp"        
+		        android:numColumns="5"
+		        android:scrollbars="none"
+		        android:verticalSpacing="1dp" >  
+		    </GridView>
+        </LinearLayout>
+
+        <!-- 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/LinearLayout01"
+            android:layout_below="@+id/LinearLayout01"
+            android:textColor="#000000"
+            android:textSize="10dp"
+            android:text="请上传高清照片，上传过程中由于图片较大，等待时间较长，请您耐心等待..." />
+		 -->
+
+    </RelativeLayout>
+    
+    <FrameLayout
+        android:id="@+id/pay_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp" >
+    </FrameLayout>
+
+</LinearLayout>

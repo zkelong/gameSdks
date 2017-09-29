@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_427_dip"
+    android:layout_height="@dimen/dimen_413_dip"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/dimen_20_dip"
+    android:layout_marginRight="@dimen/dimen_20_dip"
+    android:background="@drawable/sdk_main_bg"
+    android:orientation="vertical" >
+
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_73_dip">
+
+        <include layout="@layout/mzyw_pp_title" />
+
+        <include layout="@layout/mzyw_pp_logo" />
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1_dip"
+        android:layout_marginLeft="@dimen/dimen_1_dip"
+        android:layout_marginRight="@dimen/dimen_1_dip"
+        android:background="#d6d6d6"/>
+    
+    <LinearLayout
+        android:id="@+id/cc_line"
+        android:layout_width="@dimen/dimen_395_dip"
+        android:layout_height="@dimen/dimen_59_dip"
+        android:layout_marginLeft="@dimen/dimen_16_dip"
+        android:layout_marginRight="@dimen/dimen_16_dip"
+        android:layout_marginTop="@dimen/dimen_33_dip"
+        android:background="@drawable/txt_while" >
+
+        <LinearLayout 
+	            android:layout_width="@dimen/dimen_45_dip"
+	            android:layout_height="@dimen/dimen_59_dip"
+	            android:gravity="center" >
+        
+        <ImageView
+            android:layout_width="@dimen/dimen_17_dip"
+            android:layout_height="@dimen/dimen_23_dip"
+            android:background="@drawable/suozi_ccc" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/changpsd_psd_edx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimen_6_dip"
+            android:layout_weight="1"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/changepsd_psd_et_str0"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:background="@null"
+            android:textSize="@dimen/dimen_17_dip" >
+
+        </EditText>
+        
+		<ImageView
+            android:id="@+id/login_showpsd_iv1"
+            android:layout_width="@dimen/dimen_33_dip"
+            android:layout_height="@dimen/dimen_20_dip"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/chakanpwd"
+            android:layout_marginRight="3dp" />        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_395_dip"
+        android:layout_height="@dimen/dimen_59_dip"
+        android:layout_marginLeft="@dimen/dimen_16_dip"
+        android:layout_marginRight="@dimen/dimen_16_dip"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:background="@drawable/txt_while" >
+
+        <LinearLayout 
+	            android:layout_width="@dimen/dimen_45_dip"
+	            android:layout_height="@dimen/dimen_59_dip"
+	            android:gravity="center" >
+        
+        <ImageView
+            android:layout_width="@dimen/dimen_17_dip"
+            android:layout_height="@dimen/dimen_23_dip"
+            android:background="@drawable/suozi_ccc" />
+
+        </LinearLayout>
+        
+        <EditText
+            android:id="@+id/changpsd_psdconfirm_edx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimen_6_dip"
+            android:layout_weight="0.47"
+            android:background="@null"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/changepsd_psd_et_str2"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_17_dip" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/login_showpsd_iv2"
+            android:layout_width="@dimen/dimen_33_dip"
+            android:layout_height="@dimen/dimen_20_dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/chakanpwd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/dimen_395_dip"
+        android:layout_height="@dimen/dimen_59_dip"
+        android:layout_marginLeft="@dimen/dimen_16_dip"
+        android:layout_marginRight="@dimen/dimen_16_dip"
+        android:layout_marginTop="@dimen/dimen_15_dip"
+        android:background="@drawable/txt_while" >
+
+        <LinearLayout 
+	            android:layout_width="@dimen/dimen_45_dip"
+	            android:layout_height="@dimen/dimen_59_dip"
+	            android:gravity="center" >
+        
+        <ImageView
+            android:layout_width="@dimen/dimen_17_dip"
+            android:layout_height="@dimen/dimen_23_dip"
+            android:background="@drawable/suozi_ccc" />
+
+        </LinearLayout>
+        
+        <EditText
+            android:id="@+id/changpsd_psd_edx2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dimen_6_dip"
+            android:layout_weight="0.15"
+            android:background="@null"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:hint="@string/changepsd_psd_et_str2"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="@dimen/dimen_17_dip" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/login_showpsd_iv3"
+            android:layout_width="@dimen/dimen_33_dip"
+            android:layout_height="@dimen/dimen_20_dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/chakanpwd" />
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/changpsd_submit_bt"
+        android:layout_width="@dimen/dimen_395_dip"
+        android:layout_height="@dimen/dimen_52_dip"
+        android:layout_marginLeft="@dimen/dimen_16_dip"
+        android:layout_marginRight="@dimen/dimen_16_dip"
+        android:layout_marginTop="@dimen/dimen_20_dip"
+        android:background="@drawable/btn_19" />
+    
+
+</LinearLayout>

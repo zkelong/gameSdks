@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootview_rlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    tools:context=".QikePayCenterActivity" >
+
+    <!-- 标题title -->
+
+    <RelativeLayout
+        android:id="@+id/title_rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/com_anqupay_header_bg" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/com_anqupay_back_btn_selector" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:id="@+id/logiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/com_anqupay_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/logiv"
+                android:text="@string/txt_anqupay"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 主界面展示区域 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title_rlayout" >
+
+        <ScrollView
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#f4eade"
+            android:scrollbars="@null" >
+
+            <!-- 左边侧导航栏 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#f4eade" >
+
+                <Button
+                    android:id="@+id/alipayrbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/anqu_aliquickpay"
+                    android:textColor="#764919"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/yibaopayrbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/alipayrbtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/anqu_yibao"
+                    android:textColor="#764919"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/weixinpayrbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/yibaopayrbtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:text="@string/anqu_weixin_pay"
+                    android:textColor="#764919"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </ScrollView>
+        <!-- 右侧对应的显示区域     信用卡支付对应的视图 -->
+
+        <RelativeLayout
+            android:id="@+id/creditcard_paynum_rlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/radiogroup"
+            android:background="@drawable/com_anqupay_left_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:text="@string/txt_orderamount"
+                android:textColor="#5d5d5d"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/input_paynum_edittext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:gravity="right|center_vertical"
+                android:singleLine="true"
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textyuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/input_paynum_edittext"
+                android:text="@string/txt_payunit"
+                android:textColor="#5d5d5d"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/securityiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/com_anqupay_btn_securityicon" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/orderinfo_rlayout_include"
+            layout="@layout/anqupay_orderinfo_rlayout_include" />
+
+        <!-- 支付宝支付的视图 -->
+
+        <include
+            android:id="@+id/alipay_rlayout_include"
+            layout="@layout/anqupay_alipay_rlayout_include" />
+
+        <!-- 易宝支付的视图 -->
+
+        <include
+            android:id="@+id/yibaopay_rlayout_include"
+            layout="@layout/anqupay_yibaopay_rlayout_include" />
+        
+        <!-- 微信支付的视图 -->
+
+        <include
+            android:id="@+id/weixinpay_rlayout_include"
+            layout="@layout/anqupay_weixin_rlayout_include" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>
