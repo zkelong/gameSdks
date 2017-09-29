@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TSIXISDK</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="loginSuccess">Login Success!</string>
+	<string name="checkMainLinkError">hava error ,please try again later</string>
+	<string name="checkLinkError">hava error ,please try again later</string>
+	<string name="loginLink">http://123.59.138.47:9527/TSDK/login.jsp</string>
+</resources>
